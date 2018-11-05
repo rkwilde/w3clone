@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="layout1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="header">
+    <a href="">notreallyw3schools<span>.com</span></a>
+    <span class="subtitle">THE WORLD'S LARGEST WEB DEVELOPER SITE</span>
+  </div>
+  <div id="menu">
+    <a href="javascript:void(0)" id="menuBars" onclick="menuClickBars()" onfocus="menuFocus(this)" onblur="menuBlur(this)" class="icon">
+      <i class="fa fa-bars icon"></i>
+    </a>
+    <a href="#" class="icon"><i class="fa fa-home icon"></i></a>
+    <a href="#">HTML</a>
+    <a href="#" class="active">CSS</a>
+    <a href="#">JAVASCRIPT</a>
+    <a href="#" id="menuSQL">SQL</a>
+    <a href="#" id="menuPHP">PHP</a>
+    <a href="#" id="menuBootstrap">BOOTSTRAP</a>
+    <a href="#" id="menuHowTo">HOW TO</a>
+    <a href="#" id="menuJQuery">JQUERY</a>
+    <a href="javascript:void(0)" onclick="menuClickMore()" onfocus="menuFocus(this)" onblur="menuBlur(this)">
+      MORE <i id="menuMoreCaret" class="fa fa-caret-down"></i>
+    </a>
+    <a href="#" class="right icon"><i class="fa fa-search icon"></i></a>
+    <a href="#" class="right icon"><i class="fa fa-globe icon"></i></a>
+    <a href="javascript:void(0)" onclick="menuClickExamples()" onfocus="menuFocus(this)" onblur="menuBlur(this)" class="right">
+      EXAMPLES <i id="menuExamplesCaret" class="fa fa-caret-down"></i>
+    </a>
+    <a href="javascript:void(0)" onclick="menuClickReferences()" onfocus="menuFocus(this)" onblur="menuBlur(this)" class="right">
+      REFERENCES <i id="menuReferencesCaret" class="fa fa-caret-down"></i>
+    </a>
+  </div>
+  <div id="tutorials">
+    <div>
+      <h3>Subject 1</h3>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+    </div>
+    <div>
+      <h3>Subject 2</h3>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+    </div>
+    <div>
+      <h3>Subject 3</h3>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+    </div>
+    <div>
+      <h3>Subject 4</h3>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+      <a href="#">Learn This</a>
+    </div>
+    <span class="fa fa-times" onclick="tutorialsClickX()"></span>
+  </div>
+  <div id="chapters">
+    <div>
+      <h2>CSS Tutorial</h2>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#" class="active">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a><a href="#">CSS Item</a>
+      <a href="#">last item</a>
+      <span class="fa fa-times" onclick="chaptersClickX()"></span>
+    </div>
+  </div>
+  <div id="content">
+    <div id="article" onclick="contentClickArticle()">
+      <div>
+        <h1>CSS How To...</h1>
+        <a href="#" class="button button-previous"><img src="img_trans.gif">Previous</a>
+        <a href="#" class="button button-next">Next<img src="img_trans.gif"></a>
+      </div>
+      <div>
+        <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+      </div>
+      <div>
+        <h2>Three Ways to Insert CSS</h2>
+        <p>There are three ways of inserting a style sheet:</p>
+        <ul>
+          <li>External style sheet</li>
+          <li>Internal style sheet</li>
+          <li>Inline Style</li>
+        </ul>
+      </div>
+      <div>
+        <h2>External Style Sheet</h2>
+        <p>With and external style sheet, you can change the look of an entire website by changing just one file!</p>
+        <p>
+          Each page must include a reference to the external style sheet file inside the &lt;link&gt; element.
+          The &lt;link&gt; element goes inside the &lt;head&gt; section:
+        </p>
+        <div class="example">
+          <h3>Example</h3>
+          <code>
+            <span style="color:mediumblue">&lt;</span><span style="color:brown">head</span><span style="color:mediumblue">&gt;</span><br>
+            <span style="color:mediumblue">&lt;</span><span style="color:brown">link </span><span style="color:red">rel</span><span style="color:mediumblue">="stylesheet"</span> <span style="color:red">type</span><span style="color:mediumblue">="text/css"</span> <span style="color:red">href</span><span style="color:mediumblue">="mystyle.css"</span><span style="color:mediumblue">&gt;</span><br>
+            <span style="color:mediumblue">&lt;</span><span style="color:brown">/head</span><span style="color:mediumblue">&gt;</span><br>
+          </code>
+          <a href="#" class="button">Try it Yourself</a>
+        </div>
+        <p>
+          An external style sheet can be written in any text editor. 
+          The file should not contain any html tags. 
+          The style sheet file must be saved with a .css extension.
+        </p>
+      </div>
+      <div>
+        <h2>Test Yourself</h2>
+        <a href="#" class="button">Exercise 1</a><br>
+        <a href="#" class="button button-previous"><img src="img_trans.gif">Previous</a>
+        <a href="#" class="button button-next">Next<img src="img_trans.gif"></a>
+      </div>
+    </div>
+    <div id="sidebar"></div>
+    <div class="bottom"></div>
+    <div class="bottom"></div>
+    <div class="bottom"></div>
+    <div id="footer">
+      <p>
+        This is a portfolio entry based on w3schools.com, with which I am not affiliated in any way.
+      </p>
+    </div>
+  </div>
+  <script>
+    // document.getElementbyId("chapters").style.top = document.getElementbyId("menu").getBoundingClientRect().bottom;
+    setInterval( function() {
+      document.getElementById("chapters").style.setProperty(
+        "padding-top", document.getElementById("menu").getBoundingClientRect().bottom + "px");
+      // document.getElementById("chapters").style.setProperty("top",0);
+    },100);
+
+    function menuFocus(elem) {
+      elem.style.backgroundColor = "black";
+    }
+    function menuBlur(elem) {
+      elem.style.backgroundColor = "";
+    }
+    function downCaret(elem) {
+      elem.className = elem.className.replace(/fa-caret-up/,"fa-caret-down");
+      var elem2 = document.getElementById("tutorials");
+      var elem3 = document.getElementById("menu");
+      elem2.style.display = "none";
+      elem3.classList.remove("bgGradient");
+    }
+    function upCaret(elem) {
+      elem.className = elem.className.replace(/fa-caret-down/,"fa-caret-up");
+      var elem2 = document.getElementById("tutorials");
+      var elem3 = document.getElementById("menu");
+      elem2.style.display = "block";
+      elem3.classList.add("bgGradient");
+    }
+    function switchCaret(elem) {
+      if (elem.classList.contains("fa-caret-down")) 
+        upCaret(elem);
+      else 
+        downCaret(elem);
+    }
+    function menuClickBars() {
+      var elem = document.getElementById("chapters");
+      if (elem.style.display=="block") {
+        elem.style.display = "";
+      } else {
+        elem.style.display = "block";
+      }
+    }
+    function menuClickMore() {
+      downCaret(document.getElementById("menuExamplesCaret"));
+      downCaret(document.getElementById("menuReferencesCaret"));
+      switchCaret(document.getElementById("menuMoreCaret"));
+    }
+    function menuClickExamples() {
+      downCaret(document.getElementById("menuMoreCaret"));
+      downCaret(document.getElementById("menuReferencesCaret"));
+      switchCaret(document.getElementById("menuExamplesCaret"));
+    }
+    function menuClickReferences() {
+      downCaret(document.getElementById("menuMoreCaret"));
+      downCaret(document.getElementById("menuExamplesCaret"));
+      switchCaret(document.getElementById("menuReferencesCaret"));
+    }
+    function tutorialsClickX() {
+      downCaret(document.getElementById("menuMoreCaret"));
+      downCaret(document.getElementById("menuExamplesCaret"));
+      downCaret(document.getElementById("menuReferencesCaret"));
+    }
+    function chaptersClickX() {
+      document.getElementById("chapters").style.display = "";
+    }
+    function contentClickArticle() {
+      chaptersClickX();
+      tutorialsClickX();
+    }
+  </script>
+</body>
+</html>
